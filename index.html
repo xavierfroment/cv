@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta name="author" content="Xavier FROMENT"/>
+    <meta name="description" content="CV"/>
+    <meta name="keywords" content="CV,Curriculum,Vitae,Developpeur,Web,Mobile"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style2.css"/>
+    <title>Xavier FROMENT</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="microside">
+            <div class="burger" onclick="toggleSidebar()">
+                <div class="ligne1"></div>
+                <div class="ligne2"></div>
+                <div class="ligne3"></div>
+            </div>
+            <div class="signature">FROMENT 2019</div>
+        </div>
+        <div class="tab">
+            <div class="logo">
+                <div class="dot"></div>
+            </div>
+            <div class="menu">
+                <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen">Accueil</button>
+                <button class="tablinks" onclick="openCity(event, 'education')">Formations</button>
+                <button class="tablinks" onclick="openCity(event, 'knowledge')">Connaissances</button>
+                <button class="tablinks" onclick="openCity(event, 'experiences')">Experiences</button>
+                <button class="tablinks" onclick="openCity(event, 'skills')">Compétences</button>
+                <button class="tablinks" onclick="openCity(event, 'about')">A propos</button>
+            </div>
+            <div class="social">
+                <img src="img/_ionicons_svg_logo-linkedin.svg" alt="LinkedIn" onclick="window.open('https://www.linkedin.com/in/xavier-froment-654734177/')"/>
+                <img src="img/_ionicons_svg_logo-facebook.svg" alt="Facebook" onclick="window.open('https://www.facebook.com/xavier.froment.391')"/>
+                <img src="img/_ionicons_svg_md-mail.svg" alt="Email" onclick="window.open('mailto:fromentxavier@gmail.com')"/> 
+                <div>
+                    <img src="img/_ionicons_svg_md-download.svg" alt="Téléchargez ce CV" onclick="window.open('img/cvxavierfroment.pdf')"/>
+                </div>
+
+            </div>
+            <div class="cecv">
+                <button class="cecv-dl" onclick="window.open('img/cvxavierfroment.pdf')">Télécharger ce CV</button>
+            </div>
+        </div>
+    </div>
+    <div class="thecontent">
+        <div id="home" class="tabcontent">
+            <div class="titre">
+                <h1>Xavier Froment</h1>
+                <h4>Développeur Web & Web Mobile Junior</h4>
+            </div>
+            <div class="imagepc">
+                <img src="img/pc.png" alt="image représentant un ordinateur portable"/>
+            </div>
+        </div>
+        <div id="education" class="tabcontent">
+            <div class="formations">
+                <h1>Formations</h1>
+                <div class="diplomas">
+                    <p><span>2019 - aujourd'hui :</span> Formation de développeur web et web mobile</p>
+                    <p>AFPA de Beauvais</p>
+                    <br>
+                    <p><span>2016 :</span> Formation initiale conduite de chariots motorisés CACES 1, 3 et 5 R389</p>
+                    <p>PROMEO de Compiègne</p>
+                    <br>
+                    <p><span>2007 :</span> Formation initiale opérateur de sûreté aéroportuaire</p>
+                    <p>A Villepinte</p>
+                    <br>
+                    <p><span>2006 :</span> Service de Sécurité Incendie et d'Assistance à Personnes niveau 1 (SSIAP 1)</p>
+                    <p>CAPS de Creil</p>
+                    <br>
+                    <p><span>2000 :</span> BAC PRO Maintenance d'appareils et Equipement Ménagers et de Collectivité</p>
+                    <p>Lycée Edouard Branly</p>
+                </div>
+            </div>
+        </div>
+        <div id="knowledge" class="tabcontent">
+            <div class="myKnowledge">
+                <h1>Connaissances</h1>
+                <div class="lansof">
+                    <div class="languages">
+                        <h2>Langages et programmations</h2>
+                        <ul>
+                            <li>Algorithme</li>
+                            <li>HTML5 et CSS3</li>
+                            <li>JavaScript</li>
+                            <li>SQL</li>
+                            <li>Java SE</li>
+                            <li>JDBC</li>
+                            <li>Java EE</li>
+                            <li>Hibernate</li>
+                            <li>Maven</li>
+                            <li>Spring Boot</li>
+                            <li>XML</li>
+                            <li>React.Native</li>
+                        </ul>
+                    </div>
+                    <div class="softwares">
+                        <h2>Logiciels utilisés</h2>
+                        <ul>
+                            <li>Algobox</li>
+                            <li>Visual Studio Code</li>
+                            <li>MySQL/MariaDB</li>
+                            <li>WAMP Server</li>
+                            <li>Eclipse IDE</li>
+                            <li>Photoshop</li>
+                            <li>After Effects (notions)</li>
+                            <li>FileZilla</li>
+                            <li>Android Studio</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="experiences" class="tabcontent">
+            <div class="experience">
+                <h1>Expériences</h1>
+                <div>
+                    <h2>Développeur Web et Web mobile junior</h2>
+                    <br>
+                    <p><span>12/2019 - Aujourd'hui :</span> INSY2S, Lille</p>
+                    <p>Stage en entreprise pour la mise en pratique des acquis en milieu professionnel</p>
+                </div>
+                <div>
+                    <h2>Cariste CACES 5</h2>
+                    <br>
+                    <p><span>10/2018 - 10/2018 :</span> ID Logisitque ALINEA, Plate-forme logistique de Nanteuil-le-Haudoin</p>
+                    <p>Agence d'intérim Synergie de Senlis</p>
+                    <p><span>06/2018 - 09/2018 :</span> Kuehne+Nagel, Plate-forme logistique de Lagny le Sec</p>
+                    <p>Agence d'intérim Supplay, greffon dans l'entreprise</p>
+                </div>
+                <div>
+                    <h2>Préparateur de commandes</h2>
+                    <br>
+                    <p><span>05/2018 - 05/2018 :</span> Martin Brower, Plate-forme logistique de Beauvais</p>
+                    <p>Agence d'intérim CRIT de Beauvais</p>
+                    <p><span>04/2018 - 04/2018 :</span> XPO, Plate-forme logistique de Bruyères sur Oise
+                    <p>Leader Interim de Chambly</p>
+                    <p><span>02/2018 - 03/2018 :</span> WELDOM, Plate-forme logistique de Breuil-le-Sec</p>
+                    <p>Groupe Actual de Beauvais</p>
+                    <p><span>02/2018 - 02/2018 :</span> Valois Logistique, Plate-forme logistique de Fleurines</p>
+                    <p>Adecco de Creil</p>
+                    <p><span>08/2016 - 01/2018 :</span> Kuehne+Nagel, Plate-forme logistique de Lagny le Sec</p>
+                    <p>Adecco Inside, puis Supplay, greffon dans l'entreprise</p>
+                    <p><span>06/2016 - 06/2016 :</span> Senior et Cie, Breuil-le-Sec. (Magasinier réceptionniste)</p>
+                </div>
+                <div>
+                    <h2>Agent de sécurité</h2>
+                    <br>
+                    <p><span>03/2014 - 03/2014 :</span> Best Protection, Liancourt</p>
+                    <p><span>08/2007 - 10/2013 :</span> ICTS FRANCE, Aéroport de Roissy-CDG. (Opérateur de sûreté aéroportuaire)</p>
+                    <p><span>04/2007 - 06/2007 :</span> Sécuritas, Agence de Verneuil en Halatte</p>
+                    <p><span>01/2007 - 03/2007 :</span> K-GUARD Protection, Agence d'Ormoy le Davien</p>
+                </div>
+                <div>
+                    <h2>Technicien</h2>
+                    <br>
+                    <p><span>01/2001 - 01/2005 :</span> Carrefour, SAV régional d'Arsy.(Technicien electroménager)</p>
+                    <p><span>11/2000 - 11/2000 :</span> Cora, SAV de l'Hypermarché de Creil Saint Maximin</p>
+                </div>
+                <div>
+                    <h2>Manutentionnaire</h2>
+                    <br>
+                    <p><span>12/2000 - 12/2000 :</span> Manutentionnaire, Gecape, Clermont</p>
+                    <p><span>10/2000 - 12/2000 :</span> Manutentionnaire, Tropicana, Hermes</p>
+                    <p>Manpower de Clermont</p>
+                </div>
+            </div>
+         </div>
+        <div id="skills" class="tabcontent">
+            <div class="skills">
+                <h1>Compétences</h1>
+                <div>
+                    <h2>Développeur web et mobile junior</h2>
+                    <ul>
+                        <li>Codage en HTML5, CCS3, et JavaScript avec Visual Studio Code pour conception de sites internet</li>
+                        <li>Utilisation de MySQL/MariaDB pour gestion de base de données</li> 
+                        <li>Utilisation du logiciel WAMP pour serveur en machine locale</li> 
+                        <li>Maquettage de site internet avec le logiciel Pencil</li> 
+                        <li>Utilisation du CMS Prestashop et Epro Shopping</li> 
+                        <li>Programmation en Java SE, JDBC et Java EE avec le logiciel Eclipse IDE</li>
+                        <li>Utilisation du système de versionning GIT sous Eclipse IDE</li>
+                        <li>Utilisation de serveurs d'application Apache Tomcat, GlassFish sous Eclipse IDE</li>
+                        <li>Initiation à Hibernate sous Eclipse IDE</li>
+                        <li>Utilisation du langage Java et XML avec Android Studio pour la conception d'applications mobile</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Cariste</h2>
+                    <ul>
+                        <li>Gerbage de palettes sur rack</li> 
+                        <li>Dégerbage de palettes du rack</li> 
+                        <li>Utilisation de chariot à mât rétractable de catégorie CACES 5</li> 
+                        <li>Application des règle de sécurité</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Préparateur de commandes</h2>
+                    <ul>
+                        <li>Utilisation de scanner de codes barres</li> 
+                        <li>Port de charges lourdes</li> 
+                        <li>Picking</li> 
+                        <li>Utilisation de chariots non motorisés (transpalette, diables)</li> 
+                        <li>Utilisation de chariots autoportés CACES 1</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Manutentionnaire</h2>
+                    <ul>
+                        <li>Déchargement de camions</li> 
+                        <li>Mise en palette de marchandises</li> 
+                        <li>conditionnement de palettes</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Magasinier réceptionniste</h2>
+                    <ul>
+                        <li>Utilisation de scanner de code barres</li> 
+                        <li>Conditionnement de marchandises</li> 
+                        <li>Utilisation de gestionnaire de stock par informatique</li> 
+                        <li>Réapprovisionnement de stock</li> 
+                        <li>Déchargement de containers</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Opérateur de sûreté</h2>
+                    <ul>
+                        <li>Inspection filtrage des passagers et des bagages de cabine</li> 
+                        <li>Gardiennage de sites</li> 
+                        <li>Contact avec les passagers</li>
+                    </ul>
+                </div>    
+                <div>
+                <h2>Agent de sécurité</h2>
+                <ul>
+                    <li>Surveillance et gardiennage d'usines,</li> 
+                    <li>Surveillance de magasins et d'hypermarchés</li>
+                </ul>
+                </div>
+                <div>
+                <h2>Technicien</h2>
+                <ul>
+                    <li>Maintenance d'appareils électroménagers et audiovisuels en atelier</li> 
+                    <li>Contact avec la clientèle.</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="tabcontent">
+            <div class="about">
+                <h1>A propos</h1>
+                <div class="infocentre">
+                    <div class="infocomp">
+                        <h2>Informations</h2>
+                        <p>Permis de conduire B</p>
+                        <p>Véhicule à disposition</p>
+                        <p>Né le 24 janvier 1979</p>
+                    </div>
+                    <div class="centreint">
+                        <h2>Centres d'intérêt</h2>
+                        <p>Création et édition d'images</p>
+                        <p>Utilisation de l'outil informatique courante</p>
+                        <p>Bricolage</p>
+                        <p>Jeux vidéo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

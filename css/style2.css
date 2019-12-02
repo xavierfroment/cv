@@ -1,0 +1,680 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background: url("../img/bg.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+/* SIDEBAR */
+.sidebar {
+    float: left;
+    background-color: rgb(2, 9, 22);
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    box-shadow: 2px 0px 5px black;
+}
+/* Micro-sidebar */
+.microside {
+    float: left;
+    width: 45px;
+    height:100%;
+    background-color: rgb(3, 20, 53);
+    margin-left:0px;
+    margin-right:5px;
+    position: relative;
+    z-index: 20;
+}
+.signature {
+    position: absolute;
+    bottom: 10%;
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+    color: rgb(133, 148, 187);
+    left: 10px;
+}
+/* Burger menu */
+.burger {
+    position: absolute;
+    top: 7px;
+    left: 4px;
+    display: none;
+    cursor: pointer;
+}
+.burger div {
+    width: 25px;
+    height: 3px;    
+    background-color: rgb(133, 148, 187);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+/*burger menu bouton sequence*/
+.toggle .ligne1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .ligne2 {
+    opacity: 0;
+}
+.toggle .ligne3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/* Style the tab */
+.tab {
+    float: left;
+    background-color: rgb(2, 9, 22);
+}
+.logo {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(3, 20, 53);
+    position: relative;
+}
+.dot {
+    height: 180px;
+    width: 180px;
+    background-color: rgb(46, 59, 80);
+    border-radius: 50%;
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+.menu {
+    padding-top: 5px;
+    text-align: right;
+    background-color: rgb(2, 9, 22);
+    width: 200px;
+}
+/* Style the buttons inside the tab */
+.menu button {
+    display: block;
+    background-color: rgb(3, 20, 53);
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: right;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(133, 148, 187);
+}
+/* Change background color of buttons on hover */
+.menu button:hover {
+    background-color: rgb(46, 59, 80);
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;    
+    color: rgb(133, 148, 187);
+    box-shadow: -1px 0px 3px black inset;
+}
+/* Create an active/current "tab button" class */
+.menu button.active {
+    background: rgb(133, 148, 187);
+    color: rgb(19, 24, 32);
+    box-shadow: -4px 0px 3px black inset;
+}
+.social {
+    text-align:center;
+    padding-top:5px;
+    margin-top:5px;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(3, 20, 53);
+}
+.social img {
+    width: 40px;
+    filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
+    cursor: pointer;
+}
+
+.social div {
+    display:none;
+}
+.cecv-dl {
+    background-color: rgb(3, 20, 53);
+    margin-top:5px;
+    width: 200px;
+    height: 50px;
+    color: rgb(133, 148, 187);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cecv-dl:hover {
+    background-color: rgb(46, 59, 80);
+}
+
+
+/* CONTENU ONGLET */
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    width: 100%;
+    max-height: 100%;
+}
+.thecontent {
+    padding-left: 250px;
+    height: 100vh;
+    z-index: -1;
+}
+
+/* ACCUEIL */
+.titre {
+    color: rgb(133, 148, 187);
+    text-align: center;
+    padding-top:150px;
+    animation:drop 1s ease-in;
+}
+.titre h1 {
+    font-family:"Raybent Mango", Arial, Helvetica, sans-serif;
+    font-size: 7em;
+    text-shadow: 0 7px 10px black;
+}
+.titre h1, .titre h4 {
+    margin:0;
+}
+.titre h4 {
+    font-size:1.4em;
+    text-shadow: 0 3px 7px black;
+}
+@font-face {
+    font-family:"Raybent Mango";
+    src:url("../img/font/Raybent_Mango.eot?") format("eot"),
+    url("../img/font/Raybent_Mango.woff") format("woff"),
+    url("../img/font/Raybent_Mango.ttf") format("truetype"),
+    url("../img/font/Raybent_Mango.svg#RaybentMango") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+.imagepc {
+    padding-top: 100px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imagepc img {
+    width: 100%;
+    filter: drop-shadow(0px 5px 3px black);
+    animation:drop 1.5s ease;
+}
+/*animation descente*/
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }  
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }    
+}
+
+/* FORMATIONS */
+.formations {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    /*height: 600px;*/
+    max-width: 800px;
+    background-color: rgb(19, 24, 32);
+    border: 1px solid rgb(133, 148, 187);
+    animation:drop 1.5s ease;
+    box-shadow: 0px 4px 10px black;
+}
+.formations h1, .diplomas p {
+    color: rgb(133, 148, 187);
+}
+.formations h1 {
+    text-align: center;
+    font-size: 3em;
+    margin:5px;
+    text-shadow: 0 2px 5px black;
+}
+.diplomas {
+    margin-left: 77px;
+    margin-top: 78px;
+}
+.diplomas p {
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.diplomas span {
+    text-decoration: underline;
+}
+
+/* CONNAISSANCES */
+.myKnowledge {
+    margin-top: 100px;
+    max-width: 880px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: rgb(19, 24, 32);
+    border: 1px solid rgb(133, 148, 187);
+    animation:drop 1.5s ease;
+    box-shadow: 0px 4px 10px black;
+}
+.myKnowledge h1 {
+    text-align: center;
+    color: rgb(133, 148, 187);
+    margin: 5px;    
+    font-size: 3em;
+    text-shadow: 0 2px 5px black;
+}
+.lansof {
+    display:flex;
+}
+.languages h2,
+.softwares h2 {
+    text-align: center;
+    margin: 5px;
+    text-shadow: 0 2px 5px black;
+}
+
+.languages li,
+.softwares li {
+    font-size: 1.2em;
+}
+.languages ul,
+.softwares ul {
+    list-style: none;
+    padding-left: 80px;
+    margin-top: 30px;
+}
+.softwares,
+.languages {
+    flex: 1;
+    max-width: 870px;
+    height:380px;
+    background-color: rgb(3, 20, 53);
+    border: 1px solid rgb(133, 148, 187);
+    color: rgb(133, 148, 187);
+    margin: 20px;
+    animation:drop 0.4s ease;
+}
+
+ /* EXPERIENCES */
+.experience {
+    margin-top: 100px;
+    max-width: 880px;
+    height:70vh;
+    overflow: auto;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: rgb(19, 24, 32);
+    border: 1px solid rgb(133, 148, 187);
+    animation:drop 1.5s ease;
+    box-shadow: 0px 4px 10px black; 
+}
+.experience h1 {
+    text-align: center;
+    color: rgb(133, 148, 187);
+    margin: 5px;    
+    font-size: 3em;
+    text-shadow: 0 2px 5px black;
+}
+.experience div {
+    max-width: 870px;
+    background-color: rgb(3, 20, 53);
+    border: 1px solid rgb(133, 148, 187);
+    color: rgb(133, 148, 187);
+    margin: 20px;
+}
+.experience h2 {
+    text-align: center;
+}
+.experience p,
+.experience h2 {
+    margin-left: 40px;
+}
+.experience span {
+    text-decoration: underline;
+}
+
+ /* COMPETENCES */
+.skills {
+    margin-top: 100px;
+    max-width: 880px;
+    height:70vh;
+    overflow: auto;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: rgb(19, 24, 32);
+    border: 1px solid rgb(133, 148, 187);
+    animation:drop 1.5s ease;
+    box-shadow: 0px 4px 10px black; 
+}
+.skills h1 {
+    text-align: center;
+    color: rgb(133, 148, 187);
+    margin: 5px;    
+    font-size: 3em;
+    text-shadow: 0 2px 5px black;
+}
+.skills div {
+    max-width: 870px;
+    background-color: rgb(3, 20, 53);
+    border: 1px solid rgb(133, 148, 187);
+    color: rgb(133, 148, 187);
+    margin: 20px;
+}
+.skills ul {
+    margin-left: 40px;
+}
+.skills h2 {
+    text-align: center;
+}
+
+ /* A PROPOS */
+.about {
+    margin-top: 100px;
+    max-width: 880px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: rgb(19, 24, 32);
+    border: 1px solid rgb(133, 148, 187);
+    animation:drop 1.5s ease;
+    box-shadow: 0px 4px 10px black;
+}
+.about h1 {
+    text-align: center;
+    color: rgb(133, 148, 187);
+    margin: 5px;    
+    font-size: 3em;
+    text-shadow: 0 2px 5px black;
+ }
+.infocentre {
+    display:flex;
+ }
+.infocomp h2,
+.centreint h2 {
+    text-align: center;
+    margin: 5px;
+    text-shadow: 0 2px 5px black;
+}
+.infocomp,
+.centreint {
+    flex: 1;
+    height:380px;
+    background-color: rgb(3, 20, 53);
+    border: 1px solid rgb(133, 148, 187);
+    color: rgb(133, 148, 187);
+    margin: 20px;
+    animation:drop 0.4s ease;
+}
+.infocomp p,
+.centreint p {
+    padding-left: 30px;
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width:1281px) {
+    /* ACCUEIL*/
+    .titre {
+        padding-top:50px;
+    }
+    .titre h1 {
+        font-size: 5em;
+    }
+}
+@media screen and (max-width:1025px) {
+    /* ACCUEIL*/
+    .titre {
+        padding-top:25px;
+    }
+    .titre h1 {
+        font-size: 5em;
+    }
+    /* FORMATIONS */
+    .formations {
+        margin-top: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .diplomas {
+        max-width:426px;
+    }
+    /* CONNAISSANCES */
+    .myKnowledge {
+        margin-top: 70px;
+        max-width: 600px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .lansof {
+        display:flex;
+        flex-direction: column;
+    }
+    .softwares,
+    .languages {
+        height:380px;
+        margin: 20px;
+    }
+    /* EXPERIENCES ET COMPETENCES */
+    .skills,
+    .experience {
+        margin-top: 70px;
+        max-width: 600px;
+        height:80vh;
+        margin-left:auto;
+        margin-right:auto;
+    }
+     /* A PROPOS */
+    .about {
+        margin-top: 30px;
+        max-width: 600px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .infocentre {
+        display:flex;
+        flex-direction: column;
+    }
+    .formations h1,
+    .myKnowledge h1,
+    .skills h1,
+    .experience h1,
+    .about h1 {
+        font-size: 2em;
+    }
+}
+@media screen and (max-width:801px) {
+    .burger {
+        display: block;
+    }
+    .tab {
+        margin-left: -250px;
+        transition: all 0.5s ease-in-out;
+    }
+    .tab.active {
+        margin-left: 0px;
+    }
+    .sidebar {
+        width:0px;
+        z-index: 10;
+        transition: all 0.5s ease-in-out;
+    }
+    .sidebar.active {
+        width:250px;
+        z-index: 10;
+    }
+    .thecontent {
+        padding-left: 50px;
+    }
+    .titre {
+        padding-top:200px;
+    }
+    .titre h1 {
+        font-size: 6em;
+    }
+    .imagepc {
+        margin-top: 250px;    
+    }
+}
+
+
+@media screen and (max-width:769px) {
+    .imagepc {
+        margin-top: 70px;    
+    }
+}
+
+
+@media screen and (max-width:421px) {
+
+    .cecv {
+        display: none;
+    }
+    .social div {
+        display:inline-block;
+    }
+    .titre {
+        padding-top:150px;
+    }
+    .titre h1 {
+        font-size: 3em;
+    }
+    .titre h4 {
+        font-size: 0.8em;
+    }
+    .imagepc {
+        margin-top: 70px;
+    }
+    /* FORMATIONS */
+    .formations {
+        margin-top: 25px;
+        max-width: 310px;
+    }
+    .formations h1 {
+        font-size: 2em;
+    }
+    .diplomas {
+        margin-left: 20px;
+        margin-top: 62px;
+    }
+    .diplomas p {
+        max-width: 270px;
+        margin-top: 5px;
+    }
+    /* CONNAISSANCES */
+    .myKnowledge {
+        margin-top: 25px;
+        max-width: 310px;
+    }
+    .myKnowledge h1 {
+        font-size: 2em;
+    }
+    .languages li,
+    .softwares li {
+        font-size: 1em;
+    }
+    .languages ul,
+    .softwares ul {
+        padding-left: 40px;
+        margin-top: 30px;
+    }
+    .softwares,
+    .languages {
+        max-width: 290px;
+        height:380px;
+        margin: 10px;
+    }
+
+    /* EXPERIENCES */
+    .experience {
+        margin-top: 25px;
+        max-width: 310px;
+        height:80vh;
+    }
+    .experience h1 {
+        margin: 5px;    
+        font-size: 2em;
+
+    }
+    .experience div {
+        max-width: 290px;
+        margin: 10px;
+    }
+ 
+    .experience p,
+    .experience h2 {
+        margin-left: 10px;
+    }
+
+    /* COMPETENCES */
+    .skills {
+        margin-top: 25px;
+        max-width: 310px;
+        height:80vh;
+    }
+    .skills h1 {
+        font-size: 2em;
+    }
+    .skills div {
+        max-width: 290px;
+        margin: 10px;
+    }
+    .skills ul {
+        margin-left: 0px;
+    }
+
+    /* A PROPOS */
+    .about {
+        margin-top: 25px;
+        max-width: 310px;
+    }
+    .about h1 {
+        margin: 5px;    
+        font-size: 2em;
+
+    }
+    .infocentre {
+        display:flex;
+    }
+    .infocomp h2,
+    .centreint h2 {
+        text-align: center;
+        margin: 5px;
+        text-shadow: 0 2px 5px black;
+    }
+    .infocomp,
+    .centreint {
+
+        max-width: 290px;
+        height:380px;
+        background-color: rgb(3, 20, 53);
+        border: 1px solid rgb(133, 148, 187);
+        color: rgb(133, 148, 187);
+        margin: 10px;
+        animation:drop 0.4s ease;
+    }
+    .infocomp p,
+    .centreint p {
+        padding-left: 30px;
+        margin-top: 30px;
+    }
+}
+
+
+@media screen and (max-width:361px) {
+
+    .tablinks {
+        height: 55px;
+    }
+
+}
+
+@media screen and (max-width:321px) {
+
+    .tablinks {
+        height: 45px;
+    }
+
+}
