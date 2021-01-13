@@ -9,6 +9,10 @@ html {
     background-size: cover;
 }
 
+svg {
+    cursor: pointer;
+}
+
 /* SIDEBAR */
 .sidebar {
     float: left;
@@ -533,7 +537,7 @@ html {
         display: none;
     }
     .social div {
-        display:inline-block;
+        display:inline;
     }
     .titre {
         padding-top:150px;
