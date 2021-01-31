@@ -81,7 +81,6 @@ svg {
 .dot {
     height: 180px;
     width: 180px;
-    background-color: rgb(46, 59, 80);
     border-radius: 50%;
     position: absolute;
     top:10px;
@@ -372,6 +371,9 @@ svg {
     margin-left: 40px;
 }
 .skills h2 {
+    text-align: center;
+}
+.skills p {
     text-align: center;
 }
 
